@@ -1,36 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss"></style>
     <title>Portfólio Samuel Martins</title>
 </head>
-<body>
-    <nav>
-        <ul>
-            <li><a href=""></a>Pessoal</li>
-            <li><a href="">Currículo</a></li>
-            <li><a href="">Projetos</a></li>
-            <li><a href=""></a>Habilidades</li>
-        </ul>
+
+<body class="bg-[#2a2d37] text-gray-300">
+
+    <nav class="bg px-6 py-3 flex items-center justify-between">
+        <div class="flex items-center space-x-8">
+            <div class="flex-shrink-0">
+                <img class="h-8 w-auto" href="index.html" src="foto" alt="logo">
+            </div>
+
+            <div class="flex space-x-4">
+                <a href="#pessoal"
+                    class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">About me</a>
+                <a href="#skills"
+                    class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Skills</a>
+                <a href="#projects"
+                    class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Projects</a>
+                <a href="#contact"
+                    class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+            </div>
+        </div>
+
+        <div class="relative w-full max-w-xs">
+            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                <svg class="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+            </div>
+            <input type="text" placeholder="Search"
+                class="block w-full bg border-transparent rounded-md py-2 pl-10 pr-3 text-sm text-gray-300 placeholder-gray-400 focus:outline-none focus:bg-white focus:text-gray-900 focus:ring-0 transition-all">
+        </div>
     </nav>
-    
+
     <section id="pessoal">
         <h1>Samuel Estevão Pereira Martins</h1>
+        <p>Formação Academica</p>
     </section>
 
-    <section id="curriculo">
-        <h1>Formação Academica</h1>
-    </section>
-
-    <section id="projetos">
-        <h1>Projeto Cafeteria/Veritas Code</h1>
-    </section>
-
-    <section id="habilidades">
+    <section id="skills">
         <h1>Hard Skill</h1>
         <h1>Soft Skill</h1>
     </section>
+
+    <section id="projects">
+        <h1>Projeto Cafeteria/Veritas Code</h1>
+    </section>
+
+    <section id="contact">
+        <h1>telefone</h1>
+    </section>
+
 </body>
+
 </html>
