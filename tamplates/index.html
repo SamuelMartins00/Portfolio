@@ -4,51 +4,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss"></style>
-    <title>Portfólio Samuel Martins</title>
+    <title>Portfólio | Samuel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-[#FFFFFF] text-black-300">
+<body class="bg-slate-50 text-slate-900 font-sans">
 
-    <nav class="bg px-6 py-3 flex items-center justify-between">
-        <div class="flex items-center space-x-8">
-            <div class="flex-shrink-0">
-                <img class="h-8 w-auto" href="index.html" src="foto" alt="logo">
-            </div>
-
-            <div class="flex space-x-4">
-                <a href="#pessoal"
-                    class="text-black-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">About me</a>
-                <a href="#skills"
-                    class="text-black-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Skills</a>
-                <a href="#projects"
-                    class="text-black-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Projects</a>
-                <a href="#contact"
-                    class="text-black-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
-            </div>
-        </div>
-
+    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
+        <h1 class="text-2xl font-bold tracking-tight"><span class="text-blue-600">#</span>port </h1>
+        <ul class="flex gap-8 font-medium">
+            <li><a href="#biography" class="hover:text-blue-600 transition">Biography</a></li>
+            <li><a href="#project" class="hover:text-blue-600 transition">Projets</a></li>
+            <li><a href="#skills" class="hover:text-blue-600 transition">Skills</a></li>
+            <li><a href="#contact" class="hover:text-blue-600 transition">Contact</a></li>
+        </ul>
     </nav>
 
-    <section id="pessoal" class="h-64 w-full bg-cover bg-center" style="background-image: url('../static/imginicio.jpg');">
-        <h1>Samuel Estevão Pereira Martins</h1>
-        <p>Formação Academica</p>
+    <header class="py-20 px-6 max-w-6xl mx-auto text-center md:text-left md:flex items-center">
+        <div class="md:w-2/3">
+            <h2 class="text-5xl md:text-7xl font-extrabold leading-tight">
+                Samuel<span class="text-blue-600"> Martins</span>
+            </h2>
+            <p class="mt-6 text-lg text-slate-600 max-w-xl">
+                Wellcome, this is my Portfolio, will be a pleasure to tell you about me.
+            </p>
+            <div class="mt-10 flex gap-4 justify-center md:justify-start">
+                <a href="#projetos"
+                    class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">See
+                    Projects</a>
+                <a href=""
+                    class="border border-slate-300 px-8 py-3 rounded-lg font-semibold hover:bg-slate-100 transition">See
+                    Linkedin</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="biografia" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h3 class="text-3xl font-bold mb-12">Biography</h3>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group border rounded-xl overflow-hidden hover:shadow-xl transition">
+                    <div class="h-48 bg-slate-200"></div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold"></h4>
+                        <p class="text-slate-600 mt-2 text-sm"> </p>
+                        <div class="mt-4 flex gap-2">
+                            <span class="text-xs font-bold px-2 py-1 bg-blue-100 text-blue-600 rounded"></span>
+                            <span class="text-xs font-bold px-2 py-1 bg-green-100 text-green-600 rounded"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group border rounded-xl overflow-hidden hover:shadow-xl transition">
+                    <div class="h-48 bg-slate-200"></div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold"></h4>
+                        <p class="text-slate-600 mt-2 text-sm"></p>
+                        <div class="mt-4 flex gap-2">
+                            <span class="text-xs font-bold px-2 py-1 bg-purple-100 text-purple-600 rounded"></span>
+                            <span class="text-xs font-bold px-2 py-1 bg-yellow-100 text-yellow-600 rounded"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="skills">
+    <section id="project" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h3 class="text-3xl font-bold mb-12">Projects</h3>
 
-        <h1>Hard Skill</h1>
-        <h1>Soft Skill</h1>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group border rounded-xl overflow-hidden hover:shadow-xl transition">
+                    <div class="h-48 bg-slate-200"></div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold">Cafeteria</h4>
+                        <p class="text-slate-600 mt-2 text-sm">Uma simples plataforma em html, o meu primeiro documento
+                            html</p>
+                        <div class="mt-4 flex gap-2">
+                            <span class="text-xs font-bold px-2 py-1 bg-blue-100 text-blue-600 rounded"></span>
+                            <span class="text-xs font-bold px-2 py-1 bg-green-100 text-green-600 rounded"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group border rounded-xl overflow-hidden hover:shadow-xl transition">
+                    <div class="h-48 bg-slate-200"></div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold"></h4>
+                        <p class="text-slate-600 mt-2 text-sm"></p>
+                        <div class="mt-4 flex gap-2">
+                            <span class="text-xs font-bold px-2 py-1 bg-purple-100 text-purple-600 rounded"></span>
+                            <span class="text-xs font-bold px-2 py-1 bg-yellow-100 text-yellow-600 rounded"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="projects">
-        <h1>Projeto Cafeteria/Veritas Code</h1>
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h3 class="text-3xl font-bold mb-12">Skills</h3>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group border rounded-xl overflow-hidden hover:shadow-xl transition">
+                    <div class="h-48 bg-slate-200"></div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold"></h4>
+                        <p class="text-slate-600 mt-2 text-sm"></p>
+                        <div class="mt-4 flex gap-2">
+                            <span class="text-xs font-bold px-2 py-1 bg-blue-100 text-blue-600 rounded">React</span>
+                            <span class="text-xs font-bold px-2 py-1 bg-green-100 text-green-600 rounded">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group border rounded-xl overflow-hidden hover:shadow-xl transition">
+                    <div class="h-48 bg-slate-200"></div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold"></h4>
+                        <p class="text-slate-600 mt-2 text-sm"></p>
+                        <div class="mt-4 flex gap-2">
+                            <span
+                                class="text-xs font-bold px-2 py-1 bg-purple-100 text-purple-600 rounded">Tailwind</span>
+                            <span
+                                class="text-xs font-bold px-2 py-1 bg-yellow-100 text-yellow-600 rounded">Next.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
-        <h1>telefone</h1>
-    </section>
+    <footer id="contato" class="py-20 text-center">
+        <h3 class="text-3xl font-bold">Let's work together?</h3>
+        <p class="mt-4 text-slate-600">Sempre aberto a novos desafios e colaborações.</p>
+        <div class="mt-8">
+            <a href="samuelmartins0210507@gmail.com"
+                class="text-2xl font-medium text-blue-600 underline">samuelmartins0210507@gmail.com</a>
+        </div>
+    </footer>
 
 </body>
 
