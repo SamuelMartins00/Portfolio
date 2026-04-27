@@ -5,22 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio | Samuel</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-slate-50 text-slate-900 font-sans">
+<body class="bg-slate-100 text-slate-900 font-sans">
 
-    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
-        <h1 class="text-2xl font-bold tracking-tight"><span class="text-blue-600">#</span>port </h1>
-        <ul class="flex gap-8 font-medium">
-            <li><a href="#biography" class="hover:text-blue-600 transition">Biography</a></li>
-            <li><a href="#project" class="hover:text-blue-600 transition">Projects</a></li>
-            <li><a href="#skills" class="hover:text-blue-600 transition">Skills</a></li>
-            <li><a href="#contact" class="hover:text-blue-600 transition">Contact</a></li>
-        </ul>
+    <nav class="p-6 max-w-6xl mx-auto relative">
+        <div class="flex justify-between items-center">
+            <h1 class="text-2xl font-bold tracking-tight dark:text-white">
+                <span class="text-blue-600">#</span>port
+            </h1>
+
+            <ul class="hidden md:flex gap-8 font-medium text-slate-700 dark:text-slate-300">
+                <li><a href="#biography" class="hover:text-blue-600 transition">Biography</a></li>
+                <li><a href="#project" class="hover:text-blue-600 transition">Projects</a></li>
+                <li><a href="#skills" class="hover:text-blue-600 transition">Skills</a></li>
+                <li><a href="#events" class="hover:text-blue-600 transition">Events</a></li>
+                <li><a href="#contact" class="hover:text-blue-600 transition">Contact</a></li>
+            </ul>
+
+            <div class="md:hidden">
+                <input type="checkbox" id="menu-toggle" class="peer hidden">
+
+                <label for="menu-toggle"
+                    class="cursor-pointer relative z-50 block p-2 text-gray-500 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-md">
+                    <svg class="block size-6 peer-checked:hidden" id="hamburger" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </label>
+
+                <div
+                    class="hidden peer-checked:flex flex-col absolute left-0 right-0 top-full bg-white dark:bg-slate-900 shadow-xl border-t dark:border-slate-800 z-40 animate-in fade-in slide-in-from-top-2">
+                    <ul class="flex flex-col p-6 gap-4 font-medium text-slate-700 dark:text-slate-300">
+                        <li><a href="#biography" class="block py-2">Biography</a></li>
+                        <li><a href="#project" class="block py-2">Projects</a></li>
+                        <li><a href="#skills" class="block py-2">Skills</a></li>
+                        <li><a href="#events" class="block py-2">Events</a></li>
+                        <li><a href="#contact" class="block py-2">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </nav>
 
-    <header class="py-20 px-6 max-w-6xl mx-auto text-center md:text-left md:flex items-center">
+    <header class="px-6 max-w-6xl mx-auto text-center md:text-left md:flex items-center">
         <div class="md:w-2/3">
             <h2 class="text-5xl md:text-7xl font-extrabold leading-tight">
                 Samuel<span class="text-blue-600"> Martins</span>
@@ -30,17 +61,17 @@
             </p>
 
             <div class="mt-10 flex gap-4 justify-center md:justify-start">
-                <a href="#project"
-                    class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">See
-                    Projects</a>
+                <a href="../static/imginicio.jpg"
+                    class="bg-blue-600 text-white px-3 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">See
+                    Curriculum</a>
                 <a href="https://www.linkedin.com/in/samuel-martins-210s507em/"
-                    class="border border-slate-300 px-8 py-3 rounded-lg font-semibold hover:bg-slate-100 transition">See
+                    class="border border-slate-300 px-3 py-3 rounded-lg font-semibold hover:bg-slate-200 transition">See
                     Linkedin</a>
             </div>
         </div>
 
-        <div class="md:w-1/3 mt-12 md:mt-0 flex justify-center">
-            <img src="../static/fotominha.svg" alt="Samuel Martins" class="w-full max-w-md h-auto block">
+        <div class="md:w-1/3 mt-12 md:mt-0 flex justify-center sm:">
+            <img src="../static/fotominha.svg" alt="Samuel Martins" class="items-end">
         </div>
     </header>
 
@@ -56,7 +87,7 @@
                         <p class="text-slate-600 mt-2 text-sm">I grew up in a small town called Campos do Jordão and
                             have always been interested in technology
                             (it's fascinates me). Since I was 15 years old I work, but not with technology, despite of
-                            it, I worked in a coffee shop and on a restaurant</p>
+                            it, I worked in a coffee shop and on a restaurant, which contribuated to my soft skills.</p>
                     </div>
                 </div>
 
@@ -83,13 +114,18 @@
                     <div class="h-48 bg-slate-200"></div>
                     <div class="p-6">
                         <h4 class="text-xl font-bold">Cafeteria</h4>
-                        <p class="text-slate-600 mt-2 text-sm">A simple HTML platform. It is my first html document
-                            about a coffee shop and create to develop some skills.</p>
+                        <p class="text-slate-600 mt-2 text-sm">Coffee Code is a website project developed in HTML and
+                            CSS for a modern coffee shop. The purpose of the project is to present a brand, its products
+                            in a simple and intuitive way and especially to develop skills with the front-end
+                            languages..</p>
                         <div class="mt-4 flex gap-2">
                             <span class="text-xs font-bold px-1 py-1 bg-yellow-100 text-yellow-600 rounded">HTML |
                                 Bootstrap</span>
                             <span class="text-xs font-bold px-1 py-1 bg-green-100 text-green-600 rounded">CSS</span>
                             <span class="text-xs font-bold px-1 py-1 bg-blue-100 text-blue-600 rounded">Python</span>
+                            <a href="https://github.com/SamuelMartins00/cafeteria"
+                                class="border border-slate-300 px-1 py-1 rounded-lg font-semibold hover:bg-slate-200 transition">See
+                                Git Hub</a>
                         </div>
                     </div>
                 </div>
@@ -100,11 +136,16 @@
                         <h4 class="text-xl font-bold">Veritas Code</h4>
                         <p class="text-slate-600 mt-2 text-sm">This is a project developed at the college
                             with the objective of taking data from the federal chamber of deputies in Brazil and
-                            transforming it into clear and cohesive information.</p>
+                            transforming it into clear and cohesive information. My contribuition was on the back-end,
+                            developing codes in python by Google Colab.
+                        </p>
                         <div class="mt-4 flex gap-2">
                             <span
                                 class="text-xs font-bold px-2 py-1 bg-purple-100 text-purple-600 rounded">Python</span>
                             <span class="text-xs font-bold px-2 py-1 bg-yellow-100 text-yellow-600 rounded">HTML</span>
+                            <a href="https://github.com/ninaduquehc/API"
+                                class="border border-slate-300 px-1 py-1 rounded-lg font-semibold hover:bg-slate-200 transition">See
+                                Git Hub</a>
                         </div>
                     </div>
                 </div>
@@ -120,11 +161,44 @@
                 <div class="group border rounded overflow-hidden hover:shadow-xl transition">
                     <div class="h-48 bg-slate-200"></div>
                     <div class="p-6">
-                        <h4 class="text-xl font-bold"></h4>
+                        <h4 class="text-xl font-bold">Hards</h4>
                         <p class="text-slate-600 mt-2 text-sm"></p>
                         <div class="mt-4 flex gap-2">
                             <span class="text-xs font-bold px-2 py-1 bg-blue-100 text-blue-600 rounded"></span>
                             <span class="text-xs font-bold px-2 py-1 bg-green-100 text-green-600 rounded"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group border rounded overflow-hidden hover:shadow-xl transition">
+                    <div class="h-48 bg-slate-200"></div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold">Softs</h4>
+                        <p class="text-slate-600 mt-2 text-sm"></p>
+                        <div class="mt-4 flex gap-2">
+                            <span class="text-xs font-bold px-2 py-1 bg-purple-100 text-purple-600 rounded"></span>
+                            <span class="text-xs font-bold px-2 py-1 bg-yellow-100 text-yellow-600 rounded"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <h3 class="text-3xl font-bold mb-12">Events</h3>
+
+            <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="group border rounded overflow-hidden hover:shadow-xl transition">
+                    <div class="h-48 bg-slate-200"></div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold">Programming Marathon of Fatec</h4>
+                        <p class="text-slate-600 mt-2 text-sm"></p>
+                        <div class="mt-4 flex gap-2">
+                            <span class="text-xs font-bold px-2 py-1 bg-blue-100 text-blue-600 rounded">Python</span>
+                            <span class="text-xs font-bold px-2 py-1 bg-blue-200 text-blue-700 rounded">Visual Studio
+                                Code</span>
                         </div>
                     </div>
                 </div>
