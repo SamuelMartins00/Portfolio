@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio | Samuel</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../static/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
 </head>
 
 <body class="bg-slate-100 text-slate-900 font-sans">
@@ -91,7 +92,7 @@
                     </div>
                 </div>
 
-                <div class="group border rounded overflow-hidden hover:shadow-xl transition">
+                <div class="border rounded overflow-hidden hover:shadow-xl transition">
                     <img src="../static/fatec.png" alt="My Education">
                     <div class="p-6">
                         <h4 class="text-xl font-bold">My Education</h4>
@@ -131,13 +132,57 @@
                 </div>
 
                 <div class="group border rounded overflow-hidden hover:shadow-xl transition">
-                    <div class="h-48 bg-slate-200"></div>
+                    <div id="default-carousel" class="relative w-full" data-carousel="static">
+                        <div class="relative h-56 overflow-hidden md:h-64">
+                            <div class="hidden" data-carousel-item>
+                                <img src="../static/veritasindex.png"
+                                    class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="Página Veritas 1">
+                            </div>
+                            <div class="hidden" data-carousel-item>
+                                <img src="../static/veritasperfil.png"
+                                    class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="Página Perfil Veritas">
+                            </div>
+                        </div>
+
+                        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3">
+                            <button type="button" class="w-2 h-2 rounded-full bg-white/50" aria-current="true"
+                                aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                            <button type="button" class="w-2 h-2 rounded-full bg-white/50" aria-current="false"
+                                aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                        </div>
+
+                        <button type="button"
+                            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group"
+                            data-carousel-prev>
+                            <span
+                                class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/30 group-hover:bg-black/30">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="m15 19-7-7 7-7" />
+                                </svg>
+                            </span>
+                        </button>
+                        <button type="button"
+                            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group"
+                            data-carousel-next>
+                            <span
+                                class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/30 group-hover:bg-black/30">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="m9 5 7 7-7 7" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
                     <div class="p-6">
                         <h4 class="text-xl font-bold">Veritas Code</h4>
-                        <p class="text-slate-600 mt-2 text-sm">This is a project developed at the college
-                            with the objective of taking data from the federal chamber of deputies in Brazil and
-                            transforming it into clear and cohesive information. My contribuition was on the back-end,
-                            developing codes in python by Google Colab.
+                        <p class="text-slate-600 mt-2 text-sm">
+                            This project was developed during college with the goal of extracting data from the
+                            Brazilian Chamber of Deputies and transforming it into clear, cohesive information. My
+                            contribution involved both back-end and front-end development, using Python via Google Colab
+                            and HTML within VS Code.
                         </p>
                         <div class="mt-4 flex gap-2">
                             <span
@@ -149,6 +194,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -191,7 +237,50 @@
 
             <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-12">
                 <div class="group border rounded overflow-hidden hover:shadow-xl transition">
-                    <div class="h-48 bg-slate-200"></div>
+                    <div id="default-carousel" class="relative w-full" data-carousel="static">
+                        <div class="relative h-56 overflow-hidden md:h-64">
+                            <div class="hidden" data-carousel-item>
+                                <img src="../static/certificadopycoders.png"
+                                    class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="Página Veritas 1">
+                            </div>
+                            <div class="hidden" data-carousel-item>
+                                <img src="../static/fotopycoders.png"
+                                    class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="Página Perfil Veritas">
+                            </div>
+                        </div>
+
+                        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3">
+                            <button type="button" class="w-2 h-2 rounded-full bg-white/50" aria-current="true"
+                                aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                            <button type="button" class="w-2 h-2 rounded-full bg-white/50" aria-current="false"
+                                aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                        </div>
+
+                        <button type="button"
+                            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group"
+                            data-carousel-prev>
+                            <span
+                                class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/30 group-hover:bg-black/30">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="m15 19-7-7 7-7" />
+                                </svg>
+                            </span>
+                        </button>
+                        <button type="button"
+                            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group"
+                            data-carousel-next>
+                            <span
+                                class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/30 group-hover:bg-black/30">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="m9 5 7 7-7 7" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
                     <div class="p-6">
                         <h4 class="text-xl font-bold">Programming Marathon of Fatec</h4>
                         <p class="text-slate-600 mt-2 text-sm"></p>
