@@ -76,7 +76,7 @@
         </div>
     </header>
 
-    <section id="biography" class="py-20 bg-white">
+    <section id="biography" class="py-10 bg-white">
         <div class="max-w-5xl mx-auto px-6">
             <h3 class="text-3xl font-bold mb-12">Biography</h3>
 
@@ -106,19 +106,64 @@
         </div>
     </section>
 
-    <section id="project" class="py-20 bg-white">
+    <section id="project" class="py-10 bg-white">
         <div class="max-w-5xl mx-auto px-6">
             <h3 class="text-3xl font-bold mb-12">Projects</h3>
 
             <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-12">
                 <div class="group border rounded overflow-hidden hover:shadow-xl transition">
-                    <div class="h-48 bg-slate-200"></div>
+                    <div id="default-carousel" class="relative w-full" data-carousel="static">
+                        <div class="relative h-56 overflow-hidden md:h-64">
+                            <div class="hidden" data-carousel-item>
+                                <img src="../static/cafeteriahome.png"
+                                    class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="Página Veritas 1">
+                            </div>
+                            <div class="hidden" data-carousel-item>
+                                <img src="../static/cafeteriacafe.png"
+                                    class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="Página Perfil Veritas">
+                            </div>
+                        </div>
+
+                        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3">
+                            <button type="button" class="w-2 h-2 rounded-full bg-white/50" aria-current="true"
+                                aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                            <button type="button" class="w-2 h-2 rounded-full bg-white/50" aria-current="false"
+                                aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                        </div>
+
+                        <button type="button"
+                            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group"
+                            data-carousel-prev>
+                            <span
+                                class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/30 group-hover:bg-black/30">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="m15 19-7-7 7-7" />
+                                </svg>
+                            </span>
+                        </button>
+                        <button type="button"
+                            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group"
+                            data-carousel-next>
+                            <span
+                                class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/30 group-hover:bg-black/30">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="m9 5 7 7-7 7" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+
                     <div class="p-6">
                         <h4 class="text-xl font-bold">Cafeteria</h4>
-                        <p class="text-slate-600 mt-2 text-sm">Coffee Code is a website project developed in HTML and
-                            CSS for a modern coffee shop. The purpose of the project is to present a brand, its products
+                        <p class="text-slate-600 mt-2 text-sm">Coffee Code is a website project developed in HTML, CSS
+                            and Bootstrap for a modern coffee shop. The purpose of the project is to present a brand,
+                            its products
                             in a simple and intuitive way and especially to develop skills with the front-end
-                            languages..</p>
+                            languages.</p>
                         <div class="mt-4 flex gap-2">
                             <span class="text-xs font-bold px-1 py-1 bg-yellow-100 text-yellow-600 rounded">HTML |
                                 Bootstrap</span>
@@ -194,16 +239,85 @@
                         </div>
                     </div>
                 </div>
-
             </div>
+
+            <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-12 py-10">
+                <div class="group border rounded overflow-hidden hover:shadow-xl transition">
+                    <div id="default-carousel" class="relative w-full" data-carousel="static">
+                        <div class="relative h-56 overflow-hidden md:h-64">
+                            <div class="hidden" data-carousel-item>
+                                <img src="../static/prototype1.png"
+                                    class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="Página Veritas 1">
+                            </div>
+                            <div class="hidden" data-carousel-item>
+                                <img src="../static/prototype2.png"
+                                    class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="Página Perfil Veritas">
+                            </div>
+                            <div class="hidden" data-carousel-item>
+                                <img src="../static/wireframecoffee.png"
+                                    class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="Página Perfil Veritas">
+                            </div>
+                        </div>
+
+                        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3">
+                            <button type="button" class="w-2 h-2 rounded-full bg-white/50" aria-current="true"
+                                aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                            <button type="button" class="w-2 h-2 rounded-full bg-white/50" aria-current="false"
+                                aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                        </div>
+
+                        <button type="button"
+                            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group"
+                            data-carousel-prev>
+                            <span
+                                class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/30 group-hover:bg-black/30">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="m15 19-7-7 7-7" />
+                                </svg>
+                            </span>
+                        </button>
+                        <button type="button"
+                            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group"
+                            data-carousel-next>
+                            <span
+                                class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/30 group-hover:bg-black/30">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="m9 5 7 7-7 7" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold">Prototype</h4>
+                        <p class="text-slate-600 mt-2 text-sm">I also created a prototype, going through the wireframe,
+                            mockup, and finally, the final prototype. This project was developed to facilitate the
+                            ordering process for clients.</p>
+                        <div class="mt-4 flex gap-2">
+                            <span
+                                class="text-xs font-bold px-1 py-1 bg-yellow-100 text-yellow-600 rounded">Wireframe.cc</span>
+                            <span class="text-xs font-bold px-1 py-1 bg-blue-100 text-blue-600 rounded">Figma</span>
+                            <a href="https://www.figma.com/proto/GJaXxOoUOd22eXCw3D13Vw/Atividade3-Jean?node-id=29-62&t=c3ZCt5xgCUWllEdr-1"
+                                class="border border-slate-300 px-1 py-1 rounded-lg font-semibold hover:bg-slate-200 transition">See
+                                Figma</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <section id="skills" class="py-20 bg-white">
+    <section id="skills" class="py-10 bg-white">
         <div class="max-w-5xl mx-auto px-6">
             <h3 class="text-3xl font-bold mb-12">Skills</h3>
 
-            <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-12">
+            <div lass="grid md:grid-cols-1 lg:grid-cols-2 gap-12">
                 <div class="group border rounded overflow-hidden hover:shadow-xl transition">
                     <div class="h-48 bg-slate-200"></div>
                     <div class="p-6">
@@ -231,7 +345,7 @@
         </div>
     </section>
 
-    <section id="events" class="py-20 bg-white">
+    <section id="events" class="py-10 bg-white">
         <div class="max-w-5xl mx-auto px-6">
             <h3 class="text-3xl font-bold mb-12">Events</h3>
 
