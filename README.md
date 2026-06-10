@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://portfolio-beta-topaz-12.vercel.app/" target="_blank">🌐 Acessar Portfólio</a>
+  <a href="https://portfolio-beta-topaz-12.vercel.app/" target="_blank" rel="noopener noreferrer">🌐 Acessar Portfólio</a>
 </p>
 
 ---
@@ -43,35 +43,35 @@ O **Portfólio** é um site pessoal criado para apresentar minha trajetória com
 
 ## Projetos em Destaque
 
-### ☕ Cafeteria
+### Cafeteria
 Website para uma cafeteria moderna desenvolvido em HTML, CSS e Bootstrap, com foco em apresentação de marca e produtos.
 
 **Tecnologias:** HTML · CSS · Bootstrap · Python  
-🔗 [Ver no GitHub](https://github.com/SamuelMartins00/cafeteria)
+[Ver no GitHub](https://github.com/SamuelMartins00/cafeteria)
 
 ---
 
-### 🏛️ Veritas Code
+### Veritas Code
 Projeto acadêmico que extrai dados da Câmara dos Deputados brasileiros e os transforma em informações claras e coesas. Contribuições em back-end e front-end.
 
 **Tecnologias:** Python · Flask · HTML · MySQL  
-🔗 [Ver no GitHub](https://github.com/ninaduquehc/API)
+[Ver no GitHub](https://github.com/ninaduquehc/API)
 
 ---
 
-### 🎨 Prototype
+### Prototype
 Protótipo para sistema de pedidos de cafeteria, passando por wireframe, mockup e protótipo final no Figma.
 
 **Ferramentas:** Wireframe.cc · Figma  
-🔗 [Ver no Figma](https://www.figma.com/proto/GJaXxOoUOd22eXCw3D13Vw/Atividade3-Jean?node-id=29-62&t=c3ZCt5xgCUWllEdr-1)
+[Ver no Figma](https://www.figma.com/proto/GJaXxOoUOd22eXCw3D13Vw/Atividade3-Jean?node-id=29-62&t=c3ZCt5xgCUWllEdr-1)
 
 ---
 
-### ⛪ Software Missao
+### Software Missao
 Sistema web para comunidade religiosa centralizando avisos, agradecimentos, pedidos de oração e visitantes.
 
 **Tecnologias:** Python · Flask · MySQL · HTML · Docker  
-🔗 [Ver no GitHub](https://github.com/SamuelMartins00/Missao)
+[Ver no GitHub](https://github.com/SamuelMartins00/Missao)
 
 ---
 
@@ -161,7 +161,7 @@ Ou utilize a extensão **Live Server** no VS Code para um ambiente de desenvolvi
 
 O projeto está publicado via **Vercel** com deploy automático a cada push na branch principal.
 
-🔗 **[https://portfolio-beta-topaz-12.vercel.app/](https://portfolio-beta-topaz-12.vercel.app/)**
+**[https://portfolio-beta-topaz-12.vercel.app/](https://portfolio-beta-topaz-12.vercel.app/)**
 
 ---
 
